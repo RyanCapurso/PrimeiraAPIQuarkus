@@ -25,7 +25,7 @@ public class User {
     @Consumes(MediaType.APPLICATION_JSON) // Consome uma entrada Json
     @Produces(MediaType.APPLICATION_JSON) // Produz uma saida Json
     public UserEntity cadastrar(UserEntity user){
-
+    
         userManager.persist(user); //Adiciona ao banco
         return user;
     }
